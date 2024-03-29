@@ -19,14 +19,16 @@
 [![Pydantic2](https://img.shields.io/badge/Pydantic_2-EF007E?style=for-the-badge&logo=pydantic&logoColor=blue)](https://docs.pydantic.dev/latest/)
 [![Pytest](https://img.shields.io/badge/Pytest-D4E86D?style=for-the-badge&logo=pytest&logoColor=white)](https://docs.pytest.org/en/8.0.x/)
 [![Snowflake](https://img.shields.io/badge/Snowflake-90e0ef?style=for-the-badge&logo=snowflake&logoColor=blue)](https://www.snowflake.com/en/)
-[![DBT](https://img.shields.io/badge/DBT-f97f50?style=for-the-badge&logo=dbt&logoColor=white)](https://www.getdbt.com/)
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/)
+[![Apache Airflow](https://img.shields.io/badge/Apache_Airflow-109989?style=for-the-badge&logo=airflow&logoColor=white)](https://airflow.apache.org/)
+[![Grobid](https://img.shields.io/badge/grobid-909090?style=for-the-badge&logo=grobid&logoColor=blue)](https://grobid.readthedocs.io/en/latest/Introduction/)
+[![PyPDF2](https://img.shields.io/badge/PyPDF2-123499?style=for-the-badge&logo=python&logoColor=blue)](https://pypi.org/project/PyPDF2/)
 
 ## Data Sources
 *The data source is the [CFA Institute's Refresher Readings](https://www.cfainstitute.org/membership/professional-development/refresher-readings/#sort=%40refreadingcurriculumyear%20descending)* and the provided PDF files.
 
 ## Architecture Workflow
-![CFA Workflow](https://github.com/BigDataIA-Spring2024-Sec1-Team5/Assignment-3/blob/main/Images/Assignment-3.png)
+![CFA Workflow](https://github.com/BigDataIA-Spring2024-Sec1-Team5/Assignment-4/blob/main/Images/architecture.jpg)
 
 ## Pre requisites
 *Installed Libraries of Python, PyPDF2, lxml eTree, Snowflake, SQLAlchemy, Pydantic 2, Pytest, Airflow, FastAPI, Streamlit. <br>
@@ -34,75 +36,56 @@ Existing accounts of Snowflake and DBT*
 
 ## Project Structure
 ```
-📦 Assignment3
+📦 Assignment4
 ├─ ReadME
-|- Images
-│  ├─ Assignment-3.png
-│  ├─ CSV.png
-│  ├─ Content_Class.png
-│  ├─ Metadata_Class.png
-│  ├─ Previous_Architecture.png
-│  ├─ PyTest_MetaData.png
-│  ├─ S3.png
-│  ├─ Snowflake.png
-│  ├─ URL_Class.png
-│  ├─ XML.png
-│  └─ dbt.png
-├─ Notebook
-│  ├─ Part_1
-│  │  ├─ URL Class
-│  │  │  ├─ WebScraping.ipynb
-│  │  │  ├─ 02_URLClass.ipynb
-│  │  │  └─ 03_URL_Pytest.py
-│  │  └─ PDF_Class
-│  │     ├─ Metadata PDF
-│  │     │  ├─ MetaDataClass.ipynb
-│  │     │  └─ MetaDataClass_Pytest.py
-│  │     └─ Content PDF
-│  │        ├─ ContentClass.ipynb
-│  │        └─ ContentClass_Pytest.py
-│  └─ Part_2
-│     └─ DBT.ipynb
-└─ Outputs
-   ├─ Part _1
-   │  ├─ PyTest_MetaData.png
-   │  ├─ URL_Pytest.png
-   │  ├─ ContentClass_Cleaned.csv
-   │  ├─ MetaData_Cleaned.csv
-   │  └─ Updated_Scrapped_Data.csv
-   └─ Part_2
-      ├─ Lineage
-      │  ├─ DBT_Model.png
-      │  ├─ stg_learning.png
-      │  ├─ stg_metadata.png
-      │  └─ stg_summary.png
-      └─ Data
-         ├─ Screenshots
-         │  ├─ Environments.png
-         │  ├─ Prod_Job.png
-         │  ├─ Test_Job.png
-         │  ├─ cfa_prod_clean_csv.png
-         │  ├─ cfa_test_clean_csv.png
-         │  ├─ cfa_test_sql.png
-         │  ├─ dbt_docs.png
-         │  ├─ dbt_preview.png
-         │  ├─ stg_learning.png
-         │  ├─ stg_metadata.png
-         │  └─ stg_summary.png
-         └─ CSV Files
-            ├─ models_cfa_test.csv
-            ├─ models_stg_learning.csv
-            ├─ models_stg_metadata.csv
-            └─ models_stg_summary.csv
+├─ Documentation
+├─ Notebooks
+│  ├─ Streamlit
+│  │  ├─ Streamlit.py
+│  │  └─ requirements.txt
+│  ├─ FastAPI
+│  │  ├─ fastapi_logs.log
+│  │  ├─ main.py
+│  │  ├─ requirements.txt
+│  │  └─ snowflake_fastapi.py
+│  └─ Airflow
+│     ├─ dags
+│     │  ├─ tasks
+│     │  │  └─ grobid_client
+│     │  │     ├─ client.py
+│     │  │     ├─ __init__.py
+│     │  │     ├─ config.json
+│     │  │     └─ grobid_client.py
+│     │  ├─ grobid_extraction.py
+│     │  ├─ pypdf_csv.py
+│     │  ├─ pypdf_extraction.py
+│     │  └─ scraping.py
+│     ├─ requirements.txt
+│     ├─ docker-compose.yaml
+│     └─ Dockerfile
+└─ Images
+   ├─ architecture.jpg
+   ├─ FastAPI_Streamlit
+   │  ├─ FastAPI-2.jpeg
+   │  ├─ FastAPI.jpeg
+   │  ├─ PDF_Upload.png
+   │  ├─ Query_PDF.png
+   │  ├─ Query_Response.png
+   │  └─ Streamlit_Query.png
+   └─ Airflow
+      ├─ airflow.png
+      └─ extracted_s3.png
 ```
 ©generated by [Project Tree Generator](https://woochanleee.github.io/project-tree-generator)
 
 ## References
-https://www.getdbt.com/ <br>
-https://docs.getdbt.com/guides/snowflake?step=1 <br>
-https://docs.snowflake.com/en/developer-guide/python-connector/sqlalchemy  <br>
+https://airflow.apache.org/docs/apache-airflow/stable/index.html <br>
+https://docs.docker.com/ <br>
+https://docs.snowflake.com/en/developer-guide/python-connector/sqlalchemy <br>
 https://docs.pytest.org/en/8.0.x/ <br>
-https://docs.pydantic.dev/latest/
+https://docs.pydantic.dev/latest/ <br>
+https://grobid.readthedocs.io/en/latest/Introduction/ <br>
+https://learn.microsoft.com/en-us/azure/architecture/ai-ml/ <br>
 
 ## Learning Outcomes
 * Through this project, learners will acquire expertise in orchestrating data pipelines with Airflow, leveraging FastAPI for API development, and implementing user interfaces with Streamlit. They will gain proficiency in containerization using Docker, ensuring seamless deployment of services, and online hosting for accessibility. This hands-on experience will equip them with valuable skills in modern data engineering practices, including workflow automation, API development, and cloud-native architecture design, paving the way for successful implementation of similar projects in real-world scenarios. *
@@ -111,6 +94,6 @@ https://docs.pydantic.dev/latest/
 
 Name | Contribution %| Contributions |
 --- |--- | --- |
-Aditya Kanala | 33.5% | DBT|
-Shubh Patel | 33.0% | PDF Classes |
-Shikhar Patel | 33.5% | Test cases using Pytest|
+Aditya Kanala | 33.5% | Apache Airflow|
+Shubh Patel | 33.0% | FastAPI |
+Shikhar Patel | 33.5% | Streamlit|

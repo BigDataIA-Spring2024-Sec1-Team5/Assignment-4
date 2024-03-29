@@ -23,8 +23,8 @@
 [![Apache Airflow](https://img.shields.io/badge/Apache_Airflow-109989?style=for-the-badge&logo=airflow&logoColor=white)](https://airflow.apache.org/)
 [![Grobid](https://img.shields.io/badge/grobid-909090?style=for-the-badge&logo=grobid&logoColor=blue)](https://grobid.readthedocs.io/en/latest/Introduction/)
 [![PyPDF2](https://img.shields.io/badge/PyPDF2-123499?style=for-the-badge&logo=python&logoColor=blue)](https://pypi.org/project/PyPDF2/)
-[![FastAPI](https://img.shields.io/badge/FastAPI-123499?style=for-the-badge&logo=python&logoColor=green)](https://fastapi.tiangolo.com/)
-[![Streamlit](https://img.shields.io/badge/Streamlit-123499?style=for-the-badge&logo=python&logoColor=orange)](https://docs.streamlit.io/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-cfe3e4?style=for-the-badge&logo=python&logoColor=green)](https://fastapi.tiangolo.com/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-fa722a?style=for-the-badge&logo=python&logoColor=white)](https://docs.streamlit.io/)
 
 ## Data Sources
 *The data source is the [CFA Institute's Refresher Readings](https://www.cfainstitute.org/membership/professional-development/refresher-readings/#sort=%40refreadingcurriculumyear%20descending)* and the provided PDF files.

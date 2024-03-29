@@ -111,6 +111,6 @@ https://docs.pydantic.dev/latest/
 
 Name | Contribution %| Contributions |
 --- |--- | --- |
-Aditya Kanala | 33% | DBT|
-Shubh Patel | 34% | PDF Classes |
-Shikhar Patel | 33% | Test cases using Pytest|
+Aditya Kanala | 33.5% | DBT|
+Shubh Patel | 33% | PDF Classes |
+Shikhar Patel | 33.5% | Test cases using Pytest|

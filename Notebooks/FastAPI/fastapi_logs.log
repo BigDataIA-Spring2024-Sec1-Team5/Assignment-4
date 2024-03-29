@@ -1,0 +1,288 @@
+INFO:uvicorn.error:Shutting down
+INFO:uvicorn.error:Waiting for application shutdown.
+INFO:uvicorn.error:Application shutdown complete.
+INFO:uvicorn.error:Finished server process [20324]
+DEBUG:asyncio:Using selector: SelectSelector
+INFO:uvicorn.error:Started server process [30684]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:uvicorn.error:Shutting down
+INFO:uvicorn.error:Waiting for application shutdown.
+INFO:uvicorn.error:Application shutdown complete.
+INFO:uvicorn.error:Finished server process [30684]
+DEBUG:asyncio:Using selector: SelectSelector
+INFO:uvicorn.error:Started server process [21740]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:uvicorn.error:Shutting down
+INFO:uvicorn.error:Waiting for application shutdown.
+INFO:uvicorn.error:Application shutdown complete.
+INFO:uvicorn.error:Finished server process [21740]
+DEBUG:asyncio:Using selector: SelectSelector
+INFO:uvicorn.error:Started server process [25452]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:uvicorn.error:Shutting down
+INFO:uvicorn.error:Waiting for application shutdown.
+INFO:uvicorn.error:Application shutdown complete.
+INFO:uvicorn.error:Finished server process [25452]
+DEBUG:asyncio:Using selector: SelectSelector
+INFO:uvicorn.error:Started server process [3332]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+DEBUG:snowflake_fastapi:Received query request
+DEBUG:snowflake_fastapi:Connecting to Snowflake
+INFO:snowflake.connector.connection:Snowflake Connector for Python Version: 3.7.1, Python Version: 3.11.5, Platform: Windows-10-10.0.22631-SP0
+DEBUG:snowflake.connector.connection:connect
+DEBUG:snowflake.connector.connection:__config
+INFO:snowflake.connector.connection:This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+DEBUG:snowflake.connector.converter:use_numpy: False
+DEBUG:snowflake.connector.converter_issue23517:initialized
+DEBUG:snowflake.connector.connection:REST API object was created: gqvalun-lc77693.snowflakecomputing.com:443
+DEBUG:snowflake.connector.auth._auth:authenticate
+DEBUG:snowflake.connector.auth._auth:assertion content: *********
+DEBUG:snowflake.connector.auth._auth:account=gqvalun-lc77693, user=ShikharPatel, database=pdfdata, schema=PUBLIC, warehouse=COMPUTE_WH, role=None, request_id=94b28a60-290f-4c6d-8d62-c5297390c81b
+DEBUG:snowflake.connector.auth._auth:body['data']: {'CLIENT_APP_ID': 'PythonConnector', 'CLIENT_APP_VERSION': '3.7.1', 'SVN_REVISION': None, 'ACCOUNT_NAME': 'gqvalun-lc77693', 'LOGIN_NAME': 'ShikharPatel', 'CLIENT_ENVIRONMENT': {'APPLICATION': 'PythonConnector', 'OS': 'Windows', 'OS_VERSION': 'Windows-10-10.0.22631-SP0', 'PYTHON_VERSION': '3.11.5', 'PYTHON_RUNTIME': 'CPython', 'PYTHON_COMPILER': 'MSC v.1916 64 bit (AMD64)', 'OCSP_MODE': 'FAIL_OPEN', 'TRACING': 10, 'LOGIN_TIMEOUT': None, 'NETWORK_TIMEOUT': None, 'SOCKET_TIMEOUT': None}, 'SESSION_PARAMETERS': {'CLIENT_PREFETCH_THREADS': 4}}
+DEBUG:snowflake.connector.vendored.urllib3.util.retry:Converted retries value: 1 -> Retry(total=1, connect=None, read=None, redirect=None, status=None)
+DEBUG:snowflake.connector.vendored.urllib3.util.retry:Converted retries value: 1 -> Retry(total=1, connect=None, read=None, redirect=None, status=None)
+DEBUG:snowflake.connector.network:Session status for SessionPool 'gqvalun-lc77693.snowflakecomputing.com', SessionPool 1/1 active sessions
+DEBUG:snowflake.connector.network:remaining request timeout: N/A ms, retry cnt: 1
+DEBUG:snowflake.connector.network:Request guid: f6c5b579-40d4-4e74-a588-f22ceb60fd6c
+DEBUG:snowflake.connector.network:socket timeout: 60
+DEBUG:snowflake.connector.vendored.urllib3.connectionpool:Starting new HTTPS connection (1): gqvalun-lc77693.snowflakecomputing.com:443
+DEBUG:snowflake.connector.ssl_wrap_socket:OCSP Mode: FAIL_OPEN, OCSP response cache file name: None
+DEBUG:snowflake.connector.ocsp_snowflake:cache directory: C:\Users\shikh\AppData\Local\Snowflake\Caches
+DEBUG:snowflake.connector.ocsp_snowflake:ocsp_response_cache_uri: file://C:/Users/shikh/AppData/Local/Snowflake/Caches/ocsp_response_cache.json
+DEBUG:snowflake.connector.ocsp_snowflake:OCSP_VALIDATION_CACHE size: 216
+DEBUG:snowflake.connector.ocsp_snowflake:OCSP response cache server is enabled: http://ocsp.snowflakecomputing.com/ocsp_response_cache.json
+DEBUG:snowflake.connector.ocsp_snowflake:OCSP dynamic cache server RETRY URL: None
+DEBUG:snowflake.connector.ocsp_snowflake:validating certificate: gqvalun-lc77693.snowflakecomputing.com
+DEBUG:snowflake.connector.ocsp_asn1crypto:# of certificates: 4
+DEBUG:snowflake.connector.ocsp_asn1crypto:subject: OrderedDict([('common_name', '*.us-east-2.snowflakecomputing.com')]), issuer: OrderedDict([('country_name', 'US'), ('organization_name', 'Amazon'), ('common_name', 'Amazon RSA 2048 M02')])
+DEBUG:snowflake.connector.ocsp_asn1crypto:subject: OrderedDict([('country_name', 'US'), ('organization_name', 'Amazon'), ('common_name', 'Amazon RSA 2048 M02')]), issuer: OrderedDict([('country_name', 'US'), ('organization_name', 'Amazon'), ('common_name', 'Amazon Root CA 1')])
+DEBUG:snowflake.connector.ocsp_asn1crypto:subject: OrderedDict([('country_name', 'US'), ('organization_name', 'Amazon'), ('common_name', 'Amazon Root CA 1')]), issuer: OrderedDict([('country_name', 'US'), ('state_or_province_name', 'Arizona'), ('locality_name', 'Scottsdale'), ('organization_name', 'Starfield Technologies, Inc.'), ('common_name', 'Starfield Services Root Certificate Authority - G2')])
+DEBUG:snowflake.connector.ocsp_asn1crypto:subject: OrderedDict([('country_name', 'US'), ('state_or_province_name', 'Arizona'), ('locality_name', 'Scottsdale'), ('organization_name', 'Starfield Technologies, Inc.'), ('common_name', 'Starfield Services Root Certificate Authority - G2')]), issuer: OrderedDict([('country_name', 'US'), ('organization_name', 'Starfield Technologies, Inc.'), ('organizational_unit_name', 'Starfield Class 2 Certification Authority')])
+DEBUG:snowflake.connector.ocsp_asn1crypto:reading certificate bundle: C:\Users\shikh\Documents\Assignment-4(FastAPI)\venv\Lib\site-packages\certifi\cacert.pem
+DEBUG:snowflake.connector.ocsp_asn1crypto:not found issuer_der: OrderedDict([('country_name', 'US'), ('organization_name', 'Starfield Technologies, Inc.'), ('organizational_unit_name', 'Starfield Class 2 Certification Authority')])
+DEBUG:snowflake.connector.ocsp_snowflake:hit cache for subject: OrderedDict([('common_name', '*.us-east-2.snowflakecomputing.com')])
+DEBUG:snowflake.connector.ocsp_asn1crypto:Verifying the attached certificate is signed by the issuer. Valid Not After: 2025-12-10 00:00:00+00:00
+DEBUG:snowflake.connector.ocsp_snowflake:hit cache for subject: OrderedDict([('country_name', 'US'), ('organization_name', 'Amazon'), ('common_name', 'Amazon RSA 2048 M02')])
+DEBUG:snowflake.connector.ocsp_asn1crypto:Verifying the attached certificate is signed by the issuer. Valid Not After: 2025-12-10 00:00:00+00:00
+DEBUG:snowflake.connector.ocsp_snowflake:hit cache for subject: OrderedDict([('country_name', 'US'), ('organization_name', 'Amazon'), ('common_name', 'Amazon Root CA 1')])
+DEBUG:snowflake.connector.ocsp_asn1crypto:Verifying the attached certificate is signed by the issuer. Valid Not After: 2024-06-06 12:00:00+00:00
+DEBUG:snowflake.connector.ocsp_snowflake:hit cache for subject: OrderedDict([('country_name', 'US'), ('state_or_province_name', 'Arizona'), ('locality_name', 'Scottsdale'), ('organization_name', 'Starfield Technologies, Inc.'), ('common_name', 'Starfield Services Root Certificate Authority - G2')])
+DEBUG:snowflake.connector.ocsp_snowflake:ok
+DEBUG:snowflake.connector.vendored.urllib3.connectionpool:https://gqvalun-lc77693.snowflakecomputing.com:443 "POST /session/v1/login-request?request_id=94b28a60-290f-4c6d-8d62-c5297390c81b&databaseName=pdfdata&schemaName=PUBLIC&warehouse=COMPUTE_WH&request_guid=f6c5b579-40d4-4e74-a588-f22ceb60fd6c HTTP/1.1" 200 1536
+DEBUG:snowflake.connector.network:SUCCESS
+DEBUG:snowflake.connector.network:Session status for SessionPool 'gqvalun-lc77693.snowflakecomputing.com', SessionPool 0/1 active sessions
+DEBUG:snowflake.connector.network:ret[code] = None, after post request
+DEBUG:snowflake.connector.auth._auth:completed authentication
+DEBUG:snowflake.connector.auth._auth:token = ******
+DEBUG:snowflake.connector.auth._auth:master_token = ******
+DEBUG:snowflake.connector.auth._auth:id_token = NULL
+DEBUG:snowflake.connector.auth._auth:mfa_token = NULL
+DEBUG:snowflake_fastapi:Connected to Snowflake
+DEBUG:snowflake.connector.connection:cursor
+DEBUG:snowflake_fastapi:Executing query: select * from data;
+DEBUG:snowflake.connector.cursor:executing SQL/command
+DEBUG:snowflake.connector.cursor:binding: [select * from data;] with input=[None], processed=[{}]
+INFO:snowflake.connector.cursor:query: [select * from data;]
+DEBUG:snowflake.connector.connection:sequence counter: 1
+DEBUG:snowflake.connector.cursor:Request id: cb840bcf-2aa4-4eec-b1cf-81dc1ceadafc
+DEBUG:snowflake.connector.cursor:running query [select * from data;]
+DEBUG:snowflake.connector.cursor:is_file_transfer: True
+DEBUG:snowflake.connector.connection:_cmd_query
+DEBUG:snowflake.connector._query_context_cache:serialize_to_dict() called
+DEBUG:snowflake.connector.connection:sql=[select * from data;], sequence_id=[1], is_file_transfer=[False]
+DEBUG:snowflake.connector.network:Session status for SessionPool 'gqvalun-lc77693.snowflakecomputing.com', SessionPool 1/1 active sessions
+DEBUG:snowflake.connector.network:remaining request timeout: N/A ms, retry cnt: 1
+DEBUG:snowflake.connector.network:Request guid: 175e0215-c729-4418-8741-1650d1e37a26
+DEBUG:snowflake.connector.network:socket timeout: 60
+DEBUG:snowflake.connector.vendored.urllib3.connectionpool:https://gqvalun-lc77693.snowflakecomputing.com:443 "POST /queries/v1/query-request?requestId=cb840bcf-2aa4-4eec-b1cf-81dc1ceadafc&request_guid=175e0215-c729-4418-8741-1650d1e37a26 HTTP/1.1" 200 1960
+DEBUG:snowflake.connector.network:SUCCESS
+DEBUG:snowflake.connector.network:Session status for SessionPool 'gqvalun-lc77693.snowflakecomputing.com', SessionPool 0/1 active sessions
+DEBUG:snowflake.connector.network:ret[code] = None, after post request
+DEBUG:snowflake.connector.network:Query id: 01b35147-0001-c166-0000-00058a6681cd
+DEBUG:snowflake.connector._query_context_cache:deserialize_json_dict() called: data from server: {'entries': [{'id': 0, 'timestamp': 140369612184095, 'priority': 0}]}
+DEBUG:snowflake.connector._query_context_cache:deserialize {'id': 0, 'timestamp': 140369612184095, 'priority': 0}
+DEBUG:snowflake.connector._query_context_cache:sync_priority_map called priority_map size = 0, new_priority_map size = 1
+DEBUG:snowflake.connector._query_context_cache:trim_cache() called. treeSet size is 1 and cache capacity is 5
+DEBUG:snowflake.connector._query_context_cache:trim_cache() returns. treeSet size is 1 and cache capacity is 5
+DEBUG:snowflake.connector._query_context_cache:deserialize_json_dict() returns
+DEBUG:snowflake.connector._query_context_cache:Cache Entry: (0, 140369612184095, 0)
+DEBUG:snowflake.connector.cursor:sfqid: 01b35147-0001-c166-0000-00058a6681cd
+INFO:snowflake.connector.cursor:query execution done
+DEBUG:snowflake.connector.cursor:SUCCESS
+DEBUG:snowflake.connector.cursor:PUT OR GET: False
+DEBUG:snowflake.connector.cursor:Query result format: arrow
+DEBUG:snowflake.connector.result_batch:chunk size=3
+INFO:snowflake.connector.cursor:Number of results in first chunk: 0
+DEBUG:snowflake.connector.result_set:result batch 1 has id: data_0_0_0
+DEBUG:snowflake.connector.result_set:result batch 2 has id: data_0_0_1
+DEBUG:snowflake.connector.result_set:result batch 3 has id: data_0_0_2
+DEBUG:snowflake.connector.result_set:beginning to schedule result batch downloads
+DEBUG:snowflake.connector.result_set:queuing download of result batch id: data_0_0_0
+DEBUG:snowflake.connector.result_batch:started downloading result batch id: data_0_0_0
+DEBUG:snowflake.connector.vendored.urllib3.util.retry:Converted retries value: 1 -> Retry(total=1, connect=None, read=None, redirect=None, status=None)
+DEBUG:snowflake.connector.vendored.urllib3.util.retry:Converted retries value: 1 -> Retry(total=1, connect=None, read=None, redirect=None, status=None)
+DEBUG:snowflake.connector.result_set:queuing download of result batch id: data_0_0_1
+DEBUG:snowflake.connector.network:Session status for SessionPool 'None', SessionPool 1/1 active sessions
+DEBUG:snowflake.connector.result_batch:downloading result batch id: data_0_0_0 with existing session <snowflake.connector.vendored.requests.sessions.Session object at 0x0000023A7EABF790>
+DEBUG:snowflake.connector.result_batch:started downloading result batch id: data_0_0_1
+DEBUG:snowflake.connector.result_set:queuing download of result batch id: data_0_0_2
+DEBUG:snowflake.connector.vendored.urllib3.util.retry:Converted retries value: 1 -> Retry(total=1, connect=None, read=None, redirect=None, status=None)
+DEBUG:snowflake.connector.vendored.urllib3.util.retry:Converted retries value: 1 -> Retry(total=1, connect=None, read=None, redirect=None, status=None)
+DEBUG:snowflake.connector.network:Session status for SessionPool 'None', SessionPool 2/2 active sessions
+DEBUG:snowflake.connector.result_batch:downloading result batch id: data_0_0_1 with existing session <snowflake.connector.vendored.requests.sessions.Session object at 0x0000023A7EAAEF90>
+DEBUG:snowflake.connector.result_batch:started downloading result batch id: data_0_0_2
+DEBUG:snowflake.connector.vendored.urllib3.util.retry:Converted retries value: 1 -> Retry(total=1, connect=None, read=None, redirect=None, status=None)
+DEBUG:snowflake.connector.vendored.urllib3.util.retry:Converted retries value: 1 -> Retry(total=1, connect=None, read=None, redirect=None, status=None)
+DEBUG:snowflake.connector.network:Session status for SessionPool 'None', SessionPool 3/3 active sessions
+DEBUG:snowflake.connector.result_batch:downloading result batch id: data_0_0_2 with existing session <snowflake.connector.vendored.requests.sessions.Session object at 0x0000023A7EAB9C10>
+DEBUG:snowflake.connector.result_set:user requesting to consume result batch 1
+DEBUG:snowflake.connector.vendored.urllib3.connectionpool:Starting new HTTPS connection (1): sfc-oh-ds1-58-customer-stage.s3.us-east-2.amazonaws.com:443
+DEBUG:snowflake.connector.vendored.urllib3.connectionpool:Starting new HTTPS connection (1): sfc-oh-ds1-58-customer-stage.s3.us-east-2.amazonaws.com:443
+DEBUG:snowflake.connector.vendored.urllib3.connectionpool:Starting new HTTPS connection (1): sfc-oh-ds1-58-customer-stage.s3.us-east-2.amazonaws.com:443
+DEBUG:snowflake.connector.ssl_wrap_socket:OCSP Mode: FAIL_OPEN, OCSP response cache file name: None
+DEBUG:snowflake.connector.ocsp_snowflake:ocsp_response_cache_uri: file://C:/Users/shikh/AppData/Local/Snowflake/Caches/ocsp_response_cache.json
+DEBUG:snowflake.connector.ocsp_snowflake:OCSP_VALIDATION_CACHE size: 216
+DEBUG:snowflake.connector.ocsp_snowflake:OCSP response cache server is enabled: http://ocsp.snowflakecomputing.com/ocsp_response_cache.json
+DEBUG:snowflake.connector.ocsp_snowflake:OCSP dynamic cache server RETRY URL: None
+DEBUG:snowflake.connector.ocsp_snowflake:validating certificate: sfc-oh-ds1-58-customer-stage.s3.us-east-2.amazonaws.com
+DEBUG:snowflake.connector.ssl_wrap_socket:OCSP Mode: FAIL_OPEN, OCSP response cache file name: None
+DEBUG:snowflake.connector.ocsp_asn1crypto:# of certificates: 4
+DEBUG:snowflake.connector.ocsp_snowflake:ocsp_response_cache_uri: file://C:/Users/shikh/AppData/Local/Snowflake/Caches/ocsp_response_cache.json
+DEBUG:snowflake.connector.ocsp_asn1crypto:subject: OrderedDict([('common_name', '*.s3.us-east-2.amazonaws.com')]), issuer: OrderedDict([('country_name', 'US'), ('organization_name', 'Amazon'), ('common_name', 'Amazon RSA 2048 M01')])
+DEBUG:snowflake.connector.ocsp_snowflake:OCSP_VALIDATION_CACHE size: 216
+DEBUG:snowflake.connector.ocsp_snowflake:OCSP response cache server is enabled: http://ocsp.snowflakecomputing.com/ocsp_response_cache.json
+DEBUG:snowflake.connector.ocsp_snowflake:OCSP dynamic cache server RETRY URL: None
+DEBUG:snowflake.connector.ocsp_snowflake:validating certificate: sfc-oh-ds1-58-customer-stage.s3.us-east-2.amazonaws.com
+DEBUG:snowflake.connector.ocsp_asn1crypto:subject: OrderedDict([('country_name', 'US'), ('organization_name', 'Amazon'), ('common_name', 'Amazon RSA 2048 M01')]), issuer: OrderedDict([('country_name', 'US'), ('organization_name', 'Amazon'), ('common_name', 'Amazon Root CA 1')])
+DEBUG:snowflake.connector.ocsp_asn1crypto:# of certificates: 4
+DEBUG:snowflake.connector.ocsp_asn1crypto:subject: OrderedDict([('country_name', 'US'), ('organization_name', 'Amazon'), ('common_name', 'Amazon Root CA 1')]), issuer: OrderedDict([('country_name', 'US'), ('state_or_province_name', 'Arizona'), ('locality_name', 'Scottsdale'), ('organization_name', 'Starfield Technologies, Inc.'), ('common_name', 'Starfield Services Root Certificate Authority - G2')])
+DEBUG:snowflake.connector.ocsp_asn1crypto:subject: OrderedDict([('common_name', '*.s3.us-east-2.amazonaws.com')]), issuer: OrderedDict([('country_name', 'US'), ('organization_name', 'Amazon'), ('common_name', 'Amazon RSA 2048 M01')])
+DEBUG:snowflake.connector.ocsp_asn1crypto:subject: OrderedDict([('country_name', 'US'), ('organization_name', 'Amazon'), ('common_name', 'Amazon RSA 2048 M01')]), issuer: OrderedDict([('country_name', 'US'), ('organization_name', 'Amazon'), ('common_name', 'Amazon Root CA 1')])
+DEBUG:snowflake.connector.ocsp_asn1crypto:subject: OrderedDict([('country_name', 'US'), ('state_or_province_name', 'Arizona'), ('locality_name', 'Scottsdale'), ('organization_name', 'Starfield Technologies, Inc.'), ('common_name', 'Starfield Services Root Certificate Authority - G2')]), issuer: OrderedDict([('country_name', 'US'), ('organization_name', 'Starfield Technologies, Inc.'), ('organizational_unit_name', 'Starfield Class 2 Certification Authority')])
+DEBUG:snowflake.connector.ocsp_asn1crypto:subject: OrderedDict([('country_name', 'US'), ('organization_name', 'Amazon'), ('common_name', 'Amazon Root CA 1')]), issuer: OrderedDict([('country_name', 'US'), ('state_or_province_name', 'Arizona'), ('locality_name', 'Scottsdale'), ('organization_name', 'Starfield Technologies, Inc.'), ('common_name', 'Starfield Services Root Certificate Authority - G2')])
+DEBUG:snowflake.connector.ocsp_asn1crypto:not found issuer_der: OrderedDict([('country_name', 'US'), ('organization_name', 'Starfield Technologies, Inc.'), ('organizational_unit_name', 'Starfield Class 2 Certification Authority')])
+DEBUG:snowflake.connector.ocsp_asn1crypto:subject: OrderedDict([('country_name', 'US'), ('state_or_province_name', 'Arizona'), ('locality_name', 'Scottsdale'), ('organization_name', 'Starfield Technologies, Inc.'), ('common_name', 'Starfield Services Root Certificate Authority - G2')]), issuer: OrderedDict([('country_name', 'US'), ('organization_name', 'Starfield Technologies, Inc.'), ('organizational_unit_name', 'Starfield Class 2 Certification Authority')])
+DEBUG:snowflake.connector.ssl_wrap_socket:OCSP Mode: FAIL_OPEN, OCSP response cache file name: None
+DEBUG:snowflake.connector.ocsp_snowflake:hit cache for subject: OrderedDict([('common_name', '*.s3.us-east-2.amazonaws.com')])
+DEBUG:snowflake.connector.ocsp_asn1crypto:not found issuer_der: OrderedDict([('country_name', 'US'), ('organization_name', 'Starfield Technologies, Inc.'), ('organizational_unit_name', 'Starfield Class 2 Certification Authority')])
+DEBUG:snowflake.connector.ocsp_snowflake:ocsp_response_cache_uri: file://C:/Users/shikh/AppData/Local/Snowflake/Caches/ocsp_response_cache.json
+DEBUG:snowflake.connector.ocsp_asn1crypto:Verifying the attached certificate is signed by the issuer. Valid Not After: 2025-12-10 00:00:00+00:00
+DEBUG:snowflake.connector.ocsp_snowflake:hit cache for subject: OrderedDict([('common_name', '*.s3.us-east-2.amazonaws.com')])
+DEBUG:snowflake.connector.ocsp_snowflake:OCSP_VALIDATION_CACHE size: 216
+DEBUG:snowflake.connector.ocsp_snowflake:hit cache for subject: OrderedDict([('country_name', 'US'), ('organization_name', 'Amazon'), ('common_name', 'Amazon RSA 2048 M01')])
+DEBUG:snowflake.connector.ocsp_asn1crypto:Verifying the attached certificate is signed by the issuer. Valid Not After: 2025-12-10 00:00:00+00:00
+DEBUG:snowflake.connector.ocsp_snowflake:OCSP response cache server is enabled: http://ocsp.snowflakecomputing.com/ocsp_response_cache.json
+DEBUG:snowflake.connector.ocsp_asn1crypto:Verifying the attached certificate is signed by the issuer. Valid Not After: 2025-12-10 00:00:00+00:00
+DEBUG:snowflake.connector.ocsp_snowflake:hit cache for subject: OrderedDict([('country_name', 'US'), ('organization_name', 'Amazon'), ('common_name', 'Amazon RSA 2048 M01')])
+DEBUG:snowflake.connector.ocsp_snowflake:OCSP dynamic cache server RETRY URL: None
+DEBUG:snowflake.connector.ocsp_snowflake:hit cache for subject: OrderedDict([('country_name', 'US'), ('organization_name', 'Amazon'), ('common_name', 'Amazon Root CA 1')])
+DEBUG:snowflake.connector.ocsp_asn1crypto:Verifying the attached certificate is signed by the issuer. Valid Not After: 2025-12-10 00:00:00+00:00
+DEBUG:snowflake.connector.ocsp_snowflake:validating certificate: sfc-oh-ds1-58-customer-stage.s3.us-east-2.amazonaws.com
+DEBUG:snowflake.connector.ocsp_asn1crypto:Verifying the attached certificate is signed by the issuer. Valid Not After: 2024-06-06 12:00:00+00:00
+DEBUG:snowflake.connector.ocsp_snowflake:hit cache for subject: OrderedDict([('country_name', 'US'), ('organization_name', 'Amazon'), ('common_name', 'Amazon Root CA 1')])
+DEBUG:snowflake.connector.ocsp_asn1crypto:# of certificates: 4
+DEBUG:snowflake.connector.ocsp_snowflake:hit cache for subject: OrderedDict([('country_name', 'US'), ('state_or_province_name', 'Arizona'), ('locality_name', 'Scottsdale'), ('organization_name', 'Starfield Technologies, Inc.'), ('common_name', 'Starfield Services Root Certificate Authority - G2')])
+DEBUG:snowflake.connector.ocsp_asn1crypto:Verifying the attached certificate is signed by the issuer. Valid Not After: 2024-06-06 12:00:00+00:00
+DEBUG:snowflake.connector.ocsp_snowflake:ok
+DEBUG:snowflake.connector.ocsp_asn1crypto:subject: OrderedDict([('common_name', '*.s3.us-east-2.amazonaws.com')]), issuer: OrderedDict([('country_name', 'US'), ('organization_name', 'Amazon'), ('common_name', 'Amazon RSA 2048 M01')])
+DEBUG:snowflake.connector.ocsp_snowflake:hit cache for subject: OrderedDict([('country_name', 'US'), ('state_or_province_name', 'Arizona'), ('locality_name', 'Scottsdale'), ('organization_name', 'Starfield Technologies, Inc.'), ('common_name', 'Starfield Services Root Certificate Authority - G2')])
+DEBUG:snowflake.connector.ocsp_snowflake:ok
+DEBUG:snowflake.connector.ocsp_asn1crypto:subject: OrderedDict([('country_name', 'US'), ('organization_name', 'Amazon'), ('common_name', 'Amazon RSA 2048 M01')]), issuer: OrderedDict([('country_name', 'US'), ('organization_name', 'Amazon'), ('common_name', 'Amazon Root CA 1')])
+DEBUG:snowflake.connector.ocsp_asn1crypto:subject: OrderedDict([('country_name', 'US'), ('organization_name', 'Amazon'), ('common_name', 'Amazon Root CA 1')]), issuer: OrderedDict([('country_name', 'US'), ('state_or_province_name', 'Arizona'), ('locality_name', 'Scottsdale'), ('organization_name', 'Starfield Technologies, Inc.'), ('common_name', 'Starfield Services Root Certificate Authority - G2')])
+DEBUG:snowflake.connector.ocsp_asn1crypto:subject: OrderedDict([('country_name', 'US'), ('state_or_province_name', 'Arizona'), ('locality_name', 'Scottsdale'), ('organization_name', 'Starfield Technologies, Inc.'), ('common_name', 'Starfield Services Root Certificate Authority - G2')]), issuer: OrderedDict([('country_name', 'US'), ('organization_name', 'Starfield Technologies, Inc.'), ('organizational_unit_name', 'Starfield Class 2 Certification Authority')])
+DEBUG:snowflake.connector.ocsp_asn1crypto:not found issuer_der: OrderedDict([('country_name', 'US'), ('organization_name', 'Starfield Technologies, Inc.'), ('organizational_unit_name', 'Starfield Class 2 Certification Authority')])
+DEBUG:snowflake.connector.ocsp_snowflake:hit cache for subject: OrderedDict([('common_name', '*.s3.us-east-2.amazonaws.com')])
+DEBUG:snowflake.connector.ocsp_asn1crypto:Verifying the attached certificate is signed by the issuer. Valid Not After: 2025-12-10 00:00:00+00:00
+DEBUG:snowflake.connector.ocsp_snowflake:hit cache for subject: OrderedDict([('country_name', 'US'), ('organization_name', 'Amazon'), ('common_name', 'Amazon RSA 2048 M01')])
+DEBUG:snowflake.connector.ocsp_asn1crypto:Verifying the attached certificate is signed by the issuer. Valid Not After: 2025-12-10 00:00:00+00:00
+DEBUG:snowflake.connector.ocsp_snowflake:hit cache for subject: OrderedDict([('country_name', 'US'), ('organization_name', 'Amazon'), ('common_name', 'Amazon Root CA 1')])
+DEBUG:snowflake.connector.ocsp_asn1crypto:Verifying the attached certificate is signed by the issuer. Valid Not After: 2024-06-06 12:00:00+00:00
+DEBUG:snowflake.connector.ocsp_snowflake:hit cache for subject: OrderedDict([('country_name', 'US'), ('state_or_province_name', 'Arizona'), ('locality_name', 'Scottsdale'), ('organization_name', 'Starfield Technologies, Inc.'), ('common_name', 'Starfield Services Root Certificate Authority - G2')])
+DEBUG:snowflake.connector.ocsp_snowflake:ok
+DEBUG:snowflake.connector.vendored.urllib3.connectionpool:https://sfc-oh-ds1-58-customer-stage.s3.us-east-2.amazonaws.com:443 "GET /cd5l0000-s/results/01b34d12-0001-c167-0000-00058a6651d9_0/main/data_0_0_0?x-amz-server-side-encryption-customer-algorithm=AES256&response-content-encoding=gzip&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20240329T184707Z&X-Amz-SignedHeaders=host&X-Amz-Expires=21599&X-Amz-Credential=AKIAVRUVQEPUZMVSCNKS%2F20240329%2Fus-east-2%2Fs3%2Faws4_request&X-Amz-Signature=f15844e60539abc32bae3bfd998a25ef5529c59ffcdc09c6e12369c00514337c HTTP/1.1" 200 32529
+DEBUG:snowflake.connector.vendored.urllib3.connectionpool:https://sfc-oh-ds1-58-customer-stage.s3.us-east-2.amazonaws.com:443 "GET /cd5l0000-s/results/01b34d12-0001-c167-0000-00058a6651d9_0/main/data_0_0_1?x-amz-server-side-encryption-customer-algorithm=AES256&response-content-encoding=gzip&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20240329T184707Z&X-Amz-SignedHeaders=host&X-Amz-Expires=21599&X-Amz-Credential=AKIAVRUVQEPUZMVSCNKS%2F20240329%2Fus-east-2%2Fs3%2Faws4_request&X-Amz-Signature=83938c346372dbc8827d663f84116657125f540ab42b65289e6c5b4c96745383 HTTP/1.1" 200 153310
+DEBUG:snowflake.connector.network:Session status for SessionPool 'None', SessionPool 2/3 active sessions
+DEBUG:snowflake.connector.result_batch:successfully downloaded result batch id: data_0_0_0
+DEBUG:snowflake.connector.vendored.urllib3.connectionpool:https://sfc-oh-ds1-58-customer-stage.s3.us-east-2.amazonaws.com:443 "GET /cd5l0000-s/results/01b34d12-0001-c167-0000-00058a6651d9_0/main/data_0_0_2?x-amz-server-side-encryption-customer-algorithm=AES256&response-content-encoding=gzip&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20240329T184707Z&X-Amz-SignedHeaders=host&X-Amz-Expires=21599&X-Amz-Credential=AKIAVRUVQEPUZMVSCNKS%2F20240329%2Fus-east-2%2Fs3%2Faws4_request&X-Amz-Signature=d0d27c5070a351770ddae68ad9fd6b513b505a40e7c3a00c6af0ae156843ce82 HTTP/1.1" 200 248226
+DEBUG:snowflake.connector.result_batch:started loading result batch id: data_0_0_0
+DEBUG:snowflake.connector.result_batch:Using nanoarrow as the arrow data converter
+DEBUG:snowflake.connector.CArrowIterator:Arrow BatchSize: 1
+DEBUG:snowflake.connector.CArrowIterator:Arrow chunk info: batchCount 1, columnCount 9, use_numpy: 0
+DEBUG:snowflake.connector.nanoarrow_arrow_iterator:Batches read: 0
+DEBUG:snowflake.connector.result_batch:finished loading result batch id: data_0_0_0
+DEBUG:snowflake.connector.result_set:user began consuming result batch 1
+DEBUG:snowflake.connector.CArrowIterator:Current batch index: 0, rows in current batch: 11
+DEBUG:snowflake.connector.result_set:user finished consuming result batch 1
+DEBUG:snowflake.connector.result_set:user requesting to consume result batch 2
+DEBUG:snowflake.connector.network:Session status for SessionPool 'None', SessionPool 1/3 active sessions
+DEBUG:snowflake.connector.result_batch:successfully downloaded result batch id: data_0_0_1
+DEBUG:snowflake.connector.result_batch:started loading result batch id: data_0_0_1
+DEBUG:snowflake.connector.result_batch:Using nanoarrow as the arrow data converter
+DEBUG:snowflake.connector.CArrowIterator:Arrow BatchSize: 5
+DEBUG:snowflake.connector.CArrowIterator:Arrow chunk info: batchCount 5, columnCount 9, use_numpy: 0
+DEBUG:snowflake.connector.nanoarrow_arrow_iterator:Batches read: 0
+DEBUG:snowflake.connector.result_batch:finished loading result batch id: data_0_0_1
+DEBUG:snowflake.connector.result_set:user began consuming result batch 2
+DEBUG:snowflake.connector.CArrowIterator:Current batch index: 0, rows in current batch: 10
+DEBUG:snowflake.connector.CArrowIterator:Current batch index: 1, rows in current batch: 10
+DEBUG:snowflake.connector.CArrowIterator:Current batch index: 2, rows in current batch: 9
+DEBUG:snowflake.connector.CArrowIterator:Current batch index: 3, rows in current batch: 12
+DEBUG:snowflake.connector.CArrowIterator:Current batch index: 4, rows in current batch: 12
+DEBUG:snowflake.connector.result_set:user finished consuming result batch 2
+DEBUG:snowflake.connector.result_set:user requesting to consume result batch 3
+DEBUG:snowflake.connector.network:Session status for SessionPool 'None', SessionPool 0/3 active sessions
+DEBUG:snowflake.connector.result_batch:successfully downloaded result batch id: data_0_0_2
+DEBUG:snowflake.connector.result_batch:started loading result batch id: data_0_0_2
+DEBUG:snowflake.connector.result_batch:Using nanoarrow as the arrow data converter
+DEBUG:snowflake.connector.CArrowIterator:Arrow BatchSize: 9
+DEBUG:snowflake.connector.CArrowIterator:Arrow chunk info: batchCount 9, columnCount 9, use_numpy: 0
+DEBUG:snowflake.connector.nanoarrow_arrow_iterator:Batches read: 0
+DEBUG:snowflake.connector.result_batch:finished loading result batch id: data_0_0_2
+DEBUG:snowflake.connector.result_set:user began consuming result batch 3
+DEBUG:snowflake.connector.CArrowIterator:Current batch index: 0, rows in current batch: 13
+DEBUG:snowflake.connector.CArrowIterator:Current batch index: 1, rows in current batch: 12
+DEBUG:snowflake.connector.CArrowIterator:Current batch index: 2, rows in current batch: 11
+DEBUG:snowflake.connector.CArrowIterator:Current batch index: 3, rows in current batch: 19
+DEBUG:snowflake.connector.CArrowIterator:Current batch index: 4, rows in current batch: 11
+DEBUG:snowflake.connector.CArrowIterator:Current batch index: 5, rows in current batch: 18
+DEBUG:snowflake.connector.CArrowIterator:Current batch index: 6, rows in current batch: 19
+DEBUG:snowflake.connector.CArrowIterator:Current batch index: 7, rows in current batch: 45
+DEBUG:snowflake.connector.CArrowIterator:Current batch index: 8, rows in current batch: 12
+DEBUG:snowflake.connector.result_set:user finished consuming result batch 3
+INFO:snowflake.connector.connection:closed
+DEBUG:snowflake.connector.telemetry:Closing telemetry client.
+DEBUG:snowflake.connector.telemetry:Sending 1 logs to telemetry. Data is {'logs': [{'message': {'driver_type': 'PythonConnector', 'driver_version': '3.7.1', 'source': 'PythonConnector', 'type': 'client_imported_packages', 'value': "{'csv', 'tomlkit', 'copy', 'pathlib', 'signal', 'types', 'copyreg', 'token', 'importlib', 'platform', 'idna', 'logging', 'ipaddress', 'platformdirs', 'asn1crypto', 'difflib', 'pickle', 'contextlib', 'shutil', 'site', 'urllib', 'webbrowser', 'string', 'zlib', 'inspect', 'calendar', 'keyword', 'enum', 'contextvars', 'bz2', 'certifi', 'hmac', 're', 'quopri', 'abc', 'multiprocessing', 'traceback', 'http', 'itertools', 'zipimport', 'opcode', 'queue', 'fastapi', 'sortedcontainers', 'locale', 'socketserver', 'struct', 'datetime', 'click', 'atexit', 'linecache', 'threading', 'secrets', 'errno', 'math', 'cython_runtime', 'requests', 'base64', 'decimal', 'reprlib', 'concurrent', 'subprocess', 'OpenSSL', 'lzma', 'sys', 'hashlib', 'typing_extensions', 'charset_normalizer', 'asgiref', 'random', 'dis', 'os', 'functools', 'ctypes', 'time', 'socket', 'html', 'snowflake', 'jwt', 'posixpath', 'stringprep', 'starlette', 'ast', 'unicodedata', 'zipfile', 'nt', 'stat', 'shlex', 'ntpath', 'gettext', 'winreg', 'builtins', 'mimetypes', 'textwrap', 'dataclasses', 'fnmatch', 'genericpath', 'asyncio', 'encodings', 'packaging', 'gzip', 'h11', 'weakref', 'urllib3', 'marshal', 'bisect', 'pytz', 'numbers', 'nturl2path', 'warnings', 'heapq', 'tempfile', 'uvicorn', 'binascii', 'selectors', 'json', 'filelock', 'email', 'select', 'dotenv', 'cryptography', 'pydantic', 'fractions', 'tokenize', 'snowflake_fastapi', 'typing', 'uuid', 'io', 'codecs', 'collections', 'sysconfig', 'ssl', 'colorsys', 'operator', 'msvcrt'}"}, 'timestamp': '1711738027682'}, {'message': {'driver_type': 'PythonConnector', 'driver_version': '3.7.1', 'source': 'PythonConnector', 'type': 'client_time_consume_first_result', 'query_id': '01b35147-0001-c166-0000-00058a6681cd', 'value': 1008}, 'timestamp': '1711738028184'}, {'message': {'driver_type': 'PythonConnector', 'driver_version': '3.7.1', 'source': 'PythonConnector', 'type': 'client_time_consume_last_result', 'query_id': '01b35147-0001-c166-0000-00058a6681cd', 'value': 1952}, 'timestamp': '1711738030136'}, {'message': {'driver_type': 'PythonConnector', 'driver_version': '3.7.1', 'source': 'PythonConnector', 'type': 'client_time_downloading_chunks', 'query_id': '01b35147-0001-c166-0000-00058a6681cd', 'value': 5668}, 'timestamp': '1711738030136'}]}.
+DEBUG:snowflake.connector.network:Session status for SessionPool 'gqvalun-lc77693.snowflakecomputing.com', SessionPool 1/1 active sessions
+DEBUG:snowflake.connector.network:remaining request timeout: 5000 ms, retry cnt: 1
+DEBUG:snowflake.connector.network:Request guid: 12b44e2e-9cd2-46fc-b4a7-872de5ad51f2
+DEBUG:snowflake.connector.network:socket timeout: 60
+DEBUG:snowflake.connector.vendored.urllib3.connectionpool:https://gqvalun-lc77693.snowflakecomputing.com:443 "POST /telemetry/send?request_guid=12b44e2e-9cd2-46fc-b4a7-872de5ad51f2 HTTP/1.1" 200 86
+DEBUG:snowflake.connector.network:SUCCESS
+DEBUG:snowflake.connector.network:Session status for SessionPool 'gqvalun-lc77693.snowflakecomputing.com', SessionPool 0/1 active sessions
+DEBUG:snowflake.connector.network:ret[code] = None, after post request
+DEBUG:snowflake.connector.telemetry:Successfully uploading metrics to telemetry.
+INFO:snowflake.connector.connection:No async queries seem to be running, deleting session
+DEBUG:snowflake.connector.network:Session status for SessionPool 'gqvalun-lc77693.snowflakecomputing.com', SessionPool 1/1 active sessions
+DEBUG:snowflake.connector.network:remaining request timeout: 4999 ms, retry cnt: 1
+DEBUG:snowflake.connector.network:Request guid: a90dad0c-4023-440f-b195-e7a4c66fba99
+DEBUG:snowflake.connector.network:socket timeout: 60
+DEBUG:snowflake.connector.vendored.urllib3.connectionpool:https://gqvalun-lc77693.snowflakecomputing.com:443 "POST /session?delete=true&request_guid=a90dad0c-4023-440f-b195-e7a4c66fba99 HTTP/1.1" 200 76
+DEBUG:snowflake.connector.network:SUCCESS
+DEBUG:snowflake.connector.network:Session status for SessionPool 'gqvalun-lc77693.snowflakecomputing.com', SessionPool 0/1 active sessions
+DEBUG:snowflake.connector.network:ret[code] = None, after post request
+DEBUG:snowflake.connector._query_context_cache:clear_cache() called
+DEBUG:snowflake.connector.connection:Session is closed
+DEBUG:snowflake_fastapi:Query execution successful
+INFO:uvicorn.error:Shutting down
+INFO:uvicorn.error:Waiting for application shutdown.
+INFO:uvicorn.error:Application shutdown complete.
+INFO:uvicorn.error:Finished server process [3332]
+DEBUG:snowflake.connector.connection:Rest object has been destroyed, cannot close session

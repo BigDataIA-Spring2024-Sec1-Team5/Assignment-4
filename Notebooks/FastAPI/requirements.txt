@@ -1,0 +1,6 @@
+fastapi==0.68.0
+boto3==1.18.48
+requests==2.27.0
+uvicorn==0.15.0
+python-dotenv
+snowflake-connector-python

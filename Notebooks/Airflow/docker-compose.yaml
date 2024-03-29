@@ -193,6 +193,9 @@ services:
       # Required to handle warm shutdown of the celery workers properly
       # See https://airflow.apache.org/docs/docker-stack/entrypoint.html#signal-propagation
       DUMB_INIT_SETSID: "0"
+      SNOWFLAKE_USER: ${SNOWFLAKE_USER}
+      SNOWFLAKE_PASS: ${SNOWFLAKE_PASS}
+      SNOWFLAKE_ACC_ID: ${SNOWFLAKE_ACC_ID}
     restart: always
     depends_on:
       <<: *airflow-common-depends-on
@@ -324,6 +327,46 @@ services:
     image: lfoppiano/grobid:0.6.2
     ports:
       - "8070:8070"
+  
+  # frontend:  
+  #   build:
+  #     context: .
+  #     dockerfile: ./dockerfiles/frontend.Dockerfile
+  #   ports:
+  #     - "8501:8501"
+  #   environment:
+  #     <<: *airflow-common-env
+  #     # Required to handle warm shutdown of the celery workers properly
+  #     # See https://airflow.apache.org/docs/docker-stack/entrypoint.html#signal-propagation
+  #     S3_BUCKET_NAME: ${S3_BUCKET_NAME}
+  #     AWS_ACCESS_KEY_ID: ${AWS_ACCESS_KEY_ID}
+  #     AWS_SECRET_ACCESS_KEY: ${AWS_SECRET_ACCESS_KEY}
+  #     SNOWFLAKE_USERNAME: ${SNOWFLAKE_USER}
+  #     SNOWFLAKE_PASSWORD: ${SNOWFLAKE_PASS}
+  #     SNOWFLAKE_ACCOUNT: ${SNOWFLAKE_ACC_ID}
+  #   extra_hosts:
+  #     - "host.docker.internal:host-gateway"
+    
+
+  # backend:  
+  #   build:
+  #     context: .
+  #     dockerfile: ./dockerfiles/backend.Dockerfile
+  #   ports:
+  #     - "8080:80"
+  #   environment:
+  #     <<: *airflow-common-env
+  #     # Required to handle warm shutdown of the celery workers properly
+  #     # See https://airflow.apache.org/docs/docker-stack/entrypoint.html#signal-propagation
+  #     S3_BUCKET_NAME: ${S3_BUCKET_NAME}
+  #     AWS_ACCESS_KEY_ID: ${AWS_ACCESS_KEY_ID}
+  #     AWS_SECRET_ACCESS_KEY: ${AWS_SECRET_ACCESS_KEY}
+  #     SNOWFLAKE_USERNAME: ${SNOWFLAKE_USERNAME}
+  #     SNOWFLAKE_PASSWORD: ${SNOWFLAKE_PASSWORD}
+  #     SNOWFLAKE_ACCOUNT: ${SNOWFLAKE_ACCOUNT}
+
+  #   extra_hosts:
+  #     - "host.docker.internal:host-gateway"
 
 volumes:
   postgres-db-volume:

@@ -24,10 +24,11 @@ def download_pdf_from_s3(bucket_name, s3_key, local_path, aws_conn_id):
 
 def extract_text_pypdf(file_path):
     with open(file_path, 'rb') as f:
-        pdf_reader = PyPDF2.PdfFileReader(f)
+        # Use PdfFileReader for PyPDF2 versions older than 2.0.0
+        pdf_reader = PyPDF2.PdfReader(f)
         text = ''
-        for page_num in range(pdf_reader.numPages):
-            text += pdf_reader.getPage(page_num).extractText()
+        for page in pdf_reader.pages:
+            text += page.extract_text()
     return text
 
 def upload_text_to_s3(bucket_name, s3_key, text, aws_conn_id):
